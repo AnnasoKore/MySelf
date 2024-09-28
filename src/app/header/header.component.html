@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="header-nav col-md-12 col-lg-12">
+            <nav>
+                <ul class="sidebar" *ngIf="display">
+                    <li (click)="hideSideBar()">&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                    <!-- <li (click)="hideSideBar()"><a routerLink="/home" routerLinkActive="Active">Home</a></li> -->
+                    <li (click)="hideSideBar()"><a routerLink="/education" routerLinkActive="Active">Education</a></li>
+                    <li (click)="hideSideBar()"><a routerLink="/skills" routerLinkActive="Active">Skills</a></li>
+                    <li (click)="hideSideBar()"><a routerLink="/project" routerLinkActive="Active">Projects</a></li>
+                    <li (click)="hideSideBar()"><a routerLink="/experience" routerLinkActive="Active">Experience</a></li>
+                </ul>
+                <ul>
+                    <li ><span class="nav-span"><a routerLink="/home" routerLinkActive="Active"> <fa-icon [icon]="houseIcon"style="color: #03026d;" ></fa-icon> </a>&nbsp;&nbsp; <fa-icon [icon]="userIcon" style="color: #03026d;"></fa-icon> &nbsp;  Anna Kore</span></li>
+                    <li class="hideOnMobile"><a href="/assets/Aannaso-AngularDev.pdf" download><fa-icon [icon]="downloadResume" style="color: #03026d;"></fa-icon> &nbsp;Resume</a></li>
+                    <li class="hideOnMobile"><a routerLink="/education" routerLinkActive="Active"> <fa-icon [icon]="educationIcon" style="color: #03026d;" ></fa-icon>&nbsp; Education</a></li>
+                    <li class="hideOnMobile"><a routerLink="/skills" routerLinkActive="Active"> <fa-icon [icon]="skillIcon" style="color: #03026d;"></fa-icon>&nbsp;  Skills</a></li>
+                    <li class="hideOnMobile"><a routerLink="/project" routerLinkActive="Active"> <fa-icon [icon]="projectIcon" style="color: #03026d;"></fa-icon> &nbsp; Projects</a></li>
+                    <li class="hideOnMobile"><a routerLink="/experience" routerLinkActive="Active"><fa-icon [icon]="experienceIcon" style="color: #03026d;"></fa-icon> &nbsp;Experience</a></li>
+                    <li class="menu-btn" (click)="showSideBar()"> <fa-icon [icon]="menuIcon" style="color: #03026d; margin:0px 15px;"></fa-icon> </li>
+                </ul>
+                
+            </nav>
+        </div>
+    </div>
+</div>
